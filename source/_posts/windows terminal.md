@@ -1,3 +1,9 @@
+---
+
+title：舒适的Shell，Windows Terminal。
+date: 2019-12-22 18:48:00
+---
+
 # [Windwos Terminal](https://github.com/microsoft/terminal)
 
 ## 安装
