@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>技术笔记 on 墙上的新牛奶冰</title>
-    <link>https://newmilkiceonwall.github.io/tags/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/</link>
-    <description>Recent content in 技术笔记 on 墙上的新牛奶冰</description>
+    <title>技术笔记 on 包子戴的博客</title>
+    <link>https://baozidai.github.io/tags/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/</link>
+    <description>Recent content in 技术笔记 on 包子戴的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Wed, 08 Mar 2023 13:48:00 +0800</lastBuildDate><atom:link href="https://newmilkiceonwall.github.io/tags/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 08 Mar 2023 13:48:00 +0800</lastBuildDate><atom:link href="https://baozidai.github.io/tags/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>J1900|OpenWrt安装配置笔记</title>
-      <link>https://newmilkiceonwall.github.io/posts/j1900_openwrt%E6%8A%98%E8%85%BE%E8%AE%B0%E5%BD%95%E4%B8%80/</link>
+      <link>https://baozidai.github.io/posts/j1900_openwrt%E6%8A%98%E8%85%BE%E8%AE%B0%E5%BD%95%E4%B8%80/</link>
       <pubDate>Wed, 08 Mar 2023 13:48:00 +0800</pubDate>
       
-      <guid>https://newmilkiceonwall.github.io/posts/j1900_openwrt%E6%8A%98%E8%85%BE%E8%AE%B0%E5%BD%95%E4%B8%80/</guid>
+      <guid>https://baozidai.github.io/posts/j1900_openwrt%E6%8A%98%E8%85%BE%E8%AE%B0%E5%BD%95%E4%B8%80/</guid>
       <description>J1900|OpenWrt安装配置笔记Link to heading这份笔记记录的信息可能不完全
 我使用的固件是openwrt-22.03.3-x86-generic-generic-ext4-combined-efi
 如何启动Link to heading需要把主板的uefi引导关闭，保证能够从U盘或者其他外部介质启动。
@@ -28,10 +28,10 @@ config redirect &amp;#39;dmz&amp;#39; option name &amp;#39;dmz&amp;#39; option s
     
     <item>
       <title>通过telnet取得移动光猫HS8546V5超级密码</title>
-      <link>https://newmilkiceonwall.github.io/posts/tong-guo-telnet-qu-de-yi-dong-guang-mao-hs8546v5-chao-ji-mi-ma/</link>
+      <link>https://baozidai.github.io/posts/tong-guo-telnet-qu-de-yi-dong-guang-mao-hs8546v5-chao-ji-mi-ma/</link>
       <pubDate>Wed, 10 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://newmilkiceonwall.github.io/posts/tong-guo-telnet-qu-de-yi-dong-guang-mao-hs8546v5-chao-ji-mi-ma/</guid>
+      <guid>https://baozidai.github.io/posts/tong-guo-telnet-qu-de-yi-dong-guang-mao-hs8546v5-chao-ji-mi-ma/</guid>
       <description>&lt;h1 id=&#34;需要的工具&#34;&gt;
   需要的工具
   &lt;a class=&#34;heading-link&#34; href=&#34;#%e9%9c%80%e8%a6%81%e7%9a%84%e5%b7%a5%e5%85%b7&#34;&gt;

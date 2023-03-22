@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>杂记 on 墙上的新牛奶冰</title>
-    <link>https://newmilkiceonwall.github.io/tags/%E6%9D%82%E8%AE%B0/</link>
-    <description>Recent content in 杂记 on 墙上的新牛奶冰</description>
+    <title>杂记 on 包子戴的博客</title>
+    <link>https://baozidai.github.io/tags/%E6%9D%82%E8%AE%B0/</link>
+    <description>Recent content in 杂记 on 包子戴的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Fri, 17 Mar 2023 15:48:55 +0800</lastBuildDate><atom:link href="https://newmilkiceonwall.github.io/tags/%E6%9D%82%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 17 Mar 2023 15:48:55 +0800</lastBuildDate><atom:link href="https://baozidai.github.io/tags/%E6%9D%82%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bash常用快捷键</title>
-      <link>https://newmilkiceonwall.github.io/posts/bash%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/</link>
+      <link>https://baozidai.github.io/posts/bash%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/</link>
       <pubDate>Fri, 17 Mar 2023 15:48:55 +0800</pubDate>
       
-      <guid>https://newmilkiceonwall.github.io/posts/bash%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/</guid>
+      <guid>https://baozidai.github.io/posts/bash%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/</guid>
       <description>源贴
 Bash常用快捷键Link to headingctrl键组合Link to headingctrl+a:光标移到行首。
 ctrl+b:光标左移一个字母

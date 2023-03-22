@@ -1,5 +1,5 @@
-baseURL = 'https://newmilkiceonwall.github.io/'
-title = "墙上的新牛奶冰"
+baseURL = 'https://baozidai.github.io/'
+title = "包子戴的博客"
 theme = "coder"
 languagecode = "zh"
 defaultcontentlanguage = "zh"
@@ -13,9 +13,9 @@ pygmentscodefencesguesssyntax = true
 #disqusShortname = "yourdiscussshortname"
 
 [params]
-  author = "Newmilkiceonwall"
-  info = "流量为王时代下，独立自我的小站。"
-  description = "Newmilkiceonwall's personal website"
+  author = "baozidai"
+  info = "包子戴的博客"
+  description = "baozidai's personal site"
   keywords = "blog,personal"
   avatarurl = "/img/avatar.png"
   #gravatar = "john.doe@example.com"
@@ -45,7 +45,7 @@ pygmentscodefencesguesssyntax = true
   name = "Github"
   icon = "fa fa-github fa-2x"
   weight = 1
-  url = "https://github.com/newmilkiceonwall/"
+  url = "https://github.com/baozidai/"
 #[[params.social]]
   #name = "Gitlab"
   #icon = "fa fa-gitlab fa-2x"

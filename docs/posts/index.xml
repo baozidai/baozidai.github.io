@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on 墙上的新牛奶冰</title>
-    <link>https://newmilkiceonwall.github.io/posts/</link>
-    <description>Recent content in Posts on 墙上的新牛奶冰</description>
+    <title>Posts on 包子戴的博客</title>
+    <link>https://baozidai.github.io/posts/</link>
+    <description>Recent content in Posts on 包子戴的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Tue, 21 Mar 2023 23:08:54 +0800</lastBuildDate><atom:link href="https://newmilkiceonwall.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 21 Mar 2023 23:08:54 +0800</lastBuildDate><atom:link href="https://baozidai.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>重读数据结构教程（一）：线性表</title>
-      <link>https://newmilkiceonwall.github.io/posts/%E9%87%8D%E8%AF%BB%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E6%95%99%E7%A8%8B%E4%B8%80%E7%BA%BF%E6%80%A7%E8%A1%A8/</link>
+      <link>https://baozidai.github.io/posts/%E9%87%8D%E8%AF%BB%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E6%95%99%E7%A8%8B%E4%B8%80%E7%BA%BF%E6%80%A7%E8%A1%A8/</link>
       <pubDate>Tue, 21 Mar 2023 23:08:54 +0800</pubDate>
       
-      <guid>https://newmilkiceonwall.github.io/posts/%E9%87%8D%E8%AF%BB%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E6%95%99%E7%A8%8B%E4%B8%80%E7%BA%BF%E6%80%A7%E8%A1%A8/</guid>
+      <guid>https://baozidai.github.io/posts/%E9%87%8D%E8%AF%BB%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E6%95%99%E7%A8%8B%E4%B8%80%E7%BA%BF%E6%80%A7%E8%A1%A8/</guid>
       <description>0 写在前面Link to heading阅读的这本书是李春葆主编的《数据结构教程》。这是我本科数据结构课程的参考书，当然，这次读的为更新的第六版。 这份笔记尽量简略概念部分的描述，因为本书讲述的都是&amp;quot;比较基础&amp;quot;的数据结构，在有必要时，我会做更加详细的描述或者笔记。
 1 顺序表及其应用示例Link to heading此处不赘述顺序表概念，直接摘录了书中的例子。
 1.1 P39 例2. 4Link to heading有一个顺序表L，假设元素类型ElemType为Int， 设计一个尽可能高效的算法，以第一个元素为分界线（基准，pivot），将所有小于或等于它的元素移动到基准左侧，大于它的移动到基准右侧。 这个题解揭示了一些快速排序划分的思路。
@@ -30,10 +30,10 @@
     
     <item>
       <title>Bash常用快捷键</title>
-      <link>https://newmilkiceonwall.github.io/posts/bash%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/</link>
+      <link>https://baozidai.github.io/posts/bash%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/</link>
       <pubDate>Fri, 17 Mar 2023 15:48:55 +0800</pubDate>
       
-      <guid>https://newmilkiceonwall.github.io/posts/bash%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/</guid>
+      <guid>https://baozidai.github.io/posts/bash%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/</guid>
       <description>源贴
 Bash常用快捷键Link to headingctrl键组合Link to headingctrl+a:光标移到行首。
 ctrl+b:光标左移一个字母
@@ -59,10 +59,10 @@ esc+t: 交换光标位置前的两个单词。</description>
     
     <item>
       <title>J1900|OpenWrt安装配置笔记</title>
-      <link>https://newmilkiceonwall.github.io/posts/j1900_openwrt%E6%8A%98%E8%85%BE%E8%AE%B0%E5%BD%95%E4%B8%80/</link>
+      <link>https://baozidai.github.io/posts/j1900_openwrt%E6%8A%98%E8%85%BE%E8%AE%B0%E5%BD%95%E4%B8%80/</link>
       <pubDate>Wed, 08 Mar 2023 13:48:00 +0800</pubDate>
       
-      <guid>https://newmilkiceonwall.github.io/posts/j1900_openwrt%E6%8A%98%E8%85%BE%E8%AE%B0%E5%BD%95%E4%B8%80/</guid>
+      <guid>https://baozidai.github.io/posts/j1900_openwrt%E6%8A%98%E8%85%BE%E8%AE%B0%E5%BD%95%E4%B8%80/</guid>
       <description>J1900|OpenWrt安装配置笔记Link to heading这份笔记记录的信息可能不完全
 我使用的固件是openwrt-22.03.3-x86-generic-generic-ext4-combined-efi
 如何启动Link to heading需要把主板的uefi引导关闭，保证能够从U盘或者其他外部介质启动。
@@ -78,10 +78,10 @@ config redirect &amp;#39;dmz&amp;#39; option name &amp;#39;dmz&amp;#39; option s
     
     <item>
       <title>VirtualBox虚拟机 仅主机模式×NAT配网——主机客机互通，客机器正常上网</title>
-      <link>https://newmilkiceonwall.github.io/posts/virtualbox-xu-ni-ji-jin-zhu-ji-mo-shi-xnat-pei-wang/</link>
+      <link>https://baozidai.github.io/posts/virtualbox-xu-ni-ji-jin-zhu-ji-mo-shi-xnat-pei-wang/</link>
       <pubDate>Wed, 07 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://newmilkiceonwall.github.io/posts/virtualbox-xu-ni-ji-jin-zhu-ji-mo-shi-xnat-pei-wang/</guid>
+      <guid>https://baozidai.github.io/posts/virtualbox-xu-ni-ji-jin-zhu-ji-mo-shi-xnat-pei-wang/</guid>
       <description>0 写在前面Link to heading起因是这样的——由于发现完美对战平台会影响VBox的运行，卸载完美之后，用回了阔别几个月的VBox。需要组一个Ubuntu的服务器，用于练习，但是默认的NAT模式，主机直通虚拟机上的应用需要在VBox配置端口映射，一个一个映射太繁琐了！就想能不能组一个类似局域网的模式，同时客机能够通过NAT正常上网。网上有很多客机单网卡的实现，这一篇是基于Vmware的，但是这种方案需要配置window网络共享，有没有一种不用配置共享的方案？
 1 双网卡配置Link to heading这里需要使用VBox的HostOnly网卡，如果没有这个网卡适配器，可以在VBox主页面——管理——主机网络管理器中新建，window系统可能需要管理员权限。就在主机网络管理器中将这张网卡的IPv4地址设置为192.168.56.2/24。考虑到未来可能有其他设备或虚拟机接入，打开DHCP服务器为192.168.56.X网段自动分配IP，更具不同人的实际情况，这个操作可能不是必须的。
 随后，在需要配置的虚拟机设置页——网络，启用网卡1和网卡2，分别选择NAT和仅主机网络，并为仅主机网络选择刚刚配置好的192.168.56.X网段HostOnly网卡。
@@ -93,10 +93,10 @@ sudo nano /etc/netplan/00-installer-config.yaml # 当然你也可以使用vim，
     
     <item>
       <title>《Beginning Game Development with Godot Learn to Create and Publish Your First 2D Platform Game》读后感</title>
-      <link>https://newmilkiceonwall.github.io/posts/lesslessbeginning-game-development-with-godot-learn-to-create-and-publish-your-first-2d-platform-gamegreatergreater-du-hou-gan/</link>
+      <link>https://baozidai.github.io/posts/lesslessbeginning-game-development-with-godot-learn-to-create-and-publish-your-first-2d-platform-gamegreatergreater-du-hou-gan/</link>
       <pubDate>Fri, 19 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://newmilkiceonwall.github.io/posts/lesslessbeginning-game-development-with-godot-learn-to-create-and-publish-your-first-2d-platform-gamegreatergreater-du-hou-gan/</guid>
+      <guid>https://baozidai.github.io/posts/lesslessbeginning-game-development-with-godot-learn-to-create-and-publish-your-first-2d-platform-gamegreatergreater-du-hou-gan/</guid>
       <description>&lt;h1 id=&#34;0-写在前面&#34;&gt;
   0 写在前面
   &lt;a class=&#34;heading-link&#34; href=&#34;#0-%e5%86%99%e5%9c%a8%e5%89%8d%e9%9d%a2&#34;&gt;
@@ -110,10 +110,10 @@ sudo nano /etc/netplan/00-installer-config.yaml # 当然你也可以使用vim，
     
     <item>
       <title>通过telnet取得移动光猫HS8546V5超级密码</title>
-      <link>https://newmilkiceonwall.github.io/posts/tong-guo-telnet-qu-de-yi-dong-guang-mao-hs8546v5-chao-ji-mi-ma/</link>
+      <link>https://baozidai.github.io/posts/tong-guo-telnet-qu-de-yi-dong-guang-mao-hs8546v5-chao-ji-mi-ma/</link>
       <pubDate>Wed, 10 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://newmilkiceonwall.github.io/posts/tong-guo-telnet-qu-de-yi-dong-guang-mao-hs8546v5-chao-ji-mi-ma/</guid>
+      <guid>https://baozidai.github.io/posts/tong-guo-telnet-qu-de-yi-dong-guang-mao-hs8546v5-chao-ji-mi-ma/</guid>
       <description>&lt;h1 id=&#34;需要的工具&#34;&gt;
   需要的工具
   &lt;a class=&#34;heading-link&#34; href=&#34;#%e9%9c%80%e8%a6%81%e7%9a%84%e5%b7%a5%e5%85%b7&#34;&gt;
@@ -142,10 +142,10 @@ sudo nano /etc/netplan/00-installer-config.yaml # 当然你也可以使用vim，
     
     <item>
       <title>新账户，新博客，新文章</title>
-      <link>https://newmilkiceonwall.github.io/posts/xin-zhang-hu-xin-bo-ke-xin-wen-zhang/</link>
+      <link>https://baozidai.github.io/posts/xin-zhang-hu-xin-bo-ke-xin-wen-zhang/</link>
       <pubDate>Wed, 10 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://newmilkiceonwall.github.io/posts/xin-zhang-hu-xin-bo-ke-xin-wen-zhang/</guid>
+      <guid>https://baozidai.github.io/posts/xin-zhang-hu-xin-bo-ke-xin-wen-zhang/</guid>
       <description>&lt;p&gt;我建立了一个新的Github账户，开启了蓄谋已久的博客，这是第一篇文章，万事开头难。现在，我已经开始写作啦！&lt;/p&gt;</description>
     </item>
     
