@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <title>
+  《Beginning Game Development with Godot Learn to Create and Publish Your First 2D Platform Game》读后感 · 墙上的新牛奶冰
+</title>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Newmilkiceonwall">
+<meta name="description" content="
+  0 写在前面
+  
+    
+    Link to heading
+  
+
+这本是书是关于Godot游戏开发的，书中描述了使用Godot开发一个简单2D平台游戏demo的全流程——从素材导入、代码编码、二进制导出甚至简单地发行自己的游戏都有讲到。
+手把手教学，描述非常细腻，极大程度避免了新人出现“环境不对”、“找不到配置项”等琐碎耗时的杂问题。“细腻”，也注定了在有限篇幅内，其内容的有限，但对传统2D平台游戏开发的基础内容都有所描述——场景搭建（tilemap）、基础移动、发射“子弹”击杀敌人以及穿插其中讲解了一些编码逻辑。">
+<meta name="keywords" content="blog,personal">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="《Beginning Game Development with Godot Learn to Create and Publish Your First 2D Platform Game》读后感"/>
+<meta name="twitter:description" content="
+  0 写在前面
+  
+    
+    Link to heading
+  
+
+这本是书是关于Godot游戏开发的，书中描述了使用Godot开发一个简单2D平台游戏demo的全流程——从素材导入、代码编码、二进制导出甚至简单地发行自己的游戏都有讲到。
+手把手教学，描述非常细腻，极大程度避免了新人出现“环境不对”、“找不到配置项”等琐碎耗时的杂问题。“细腻”，也注定了在有限篇幅内，其内容的有限，但对传统2D平台游戏开发的基础内容都有所描述——场景搭建（tilemap）、基础移动、发射“子弹”击杀敌人以及穿插其中讲解了一些编码逻辑。"/>
+
+<meta property="og:title" content="《Beginning Game Development with Godot Learn to Create and Publish Your First 2D Platform Game》读后感" />
+<meta property="og:description" content="
+  0 写在前面
+  
+    
+    Link to heading
+  
+
+这本是书是关于Godot游戏开发的，书中描述了使用Godot开发一个简单2D平台游戏demo的全流程——从素材导入、代码编码、二进制导出甚至简单地发行自己的游戏都有讲到。
+手把手教学，描述非常细腻，极大程度避免了新人出现“环境不对”、“找不到配置项”等琐碎耗时的杂问题。“细腻”，也注定了在有限篇幅内，其内容的有限，但对传统2D平台游戏开发的基础内容都有所描述——场景搭建（tilemap）、基础移动、发射“子弹”击杀敌人以及穿插其中讲解了一些编码逻辑。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://newmilkiceonwall.github.io/posts/lesslessbeginning-game-development-with-godot-learn-to-create-and-publish-your-first-2d-platform-gamegreatergreater-du-hou-gan/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-08-19T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-08-19T00:00:00+00:00" />
+
+
+
+
+<link rel="canonical" href="https://newmilkiceonwall.github.io/posts/lesslessbeginning-game-development-with-godot-learn-to-create-and-publish-your-first-2d-platform-gamegreatergreater-du-hou-gan/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.36f76aaf39a14ecf5c3a3c6250dcaf06c238b3d8365d17d646f95cb1874e852b.css" integrity="sha256-NvdqrzmhTs9cOjxiUNyvBsI4s9g2XRfWRvlcsYdOhSs=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.593028e7f7ac55c003b79c230d1cd411bb4ca53b31556c3abb7f027170e646e9.css" integrity="sha256-WTAo5/esVcADt5wjDRzUEbtMpTsxVWw6u38CcXDmRuk=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/png" href="/img/32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/img/16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+<meta name="generator" content="Hugo 0.110.0">
+
+
+
+
+
+  </head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      墙上的新牛奶冰
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">博客</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/about">关于</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://newmilkiceonwall.github.io/posts/lesslessbeginning-game-development-with-godot-learn-to-create-and-publish-your-first-2d-platform-gamegreatergreater-du-hou-gan/">
+              《Beginning Game Development with Godot Learn to Create and Publish Your First 2D Platform Game》读后感
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2022-08-19T00:00:00Z">
+                八月 19, 2022
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              
+            </span>
+          </div>
+          
+          
+          
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+          <img src="/images/lesslessbeginning-game-development-with-godot-learn-to-create-and-publish-your-first-2d-platform-gamegreatergreater-du-hou-gan.png" alt="Featured image"/>
+        
+        <h1 id="0-写在前面">
+  0 写在前面
+  <a class="heading-link" href="#0-%e5%86%99%e5%9c%a8%e5%89%8d%e9%9d%a2">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>这本是书是关于Godot游戏开发的，书中描述了使用Godot开发一个简单2D平台游戏demo的全流程——从素材导入、代码编码、二进制导出甚至简单地发行自己的游戏都有讲到。
+手把手教学，描述非常细腻，极大程度避免了新人出现“环境不对”、“找不到配置项”等琐碎耗时的杂问题。“细腻”，也注定了在有限篇幅内，其内容的有限，但对传统2D平台游戏开发的基础内容都有所描述——场景搭建（tilemap）、基础移动、发射“子弹”击杀敌人以及穿插其中讲解了一些编码逻辑。</p>
+<h1 id="1-错误与不足">
+  1 错误与不足
+  <a class="heading-link" href="#1-%e9%94%99%e8%af%af%e4%b8%8e%e4%b8%8d%e8%b6%b3">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>为了简单，书中不乏一些“低质量”代码，比如玩家血量，为了好实现，一开始是记录在怪物对象上的，乍一看会让人匪夷所思，不过在后续章节修复了这个问题。同时也存在一些失误，在介绍全局变量那里，引导读者把分数和血量记录在全局变量，以便切换关卡的时候记录这些值，但是在玩家血量掉到0死亡之后这些值不会重置，导致血量一直都是0，再次开始的时候，游戏会直接结束。</p>
+<h1 id="2-关于导出模板下载慢的解决方案">
+  2 关于导出模板下载慢的解决方案
+  <a class="heading-link" href="#2-%e5%85%b3%e4%ba%8e%e5%af%bc%e5%87%ba%e6%a8%a1%e6%9d%bf%e4%b8%8b%e8%bd%bd%e6%85%a2%e7%9a%84%e8%a7%a3%e5%86%b3%e6%96%b9%e6%a1%88">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>我使用的Godot3.4.4，自动下载导出模板是非常慢的。这里推荐去Godot的<a href="https://github.com/godotengine/godot/releases">Github仓库</a>直接下载安装，选择对应版本的<code>Godot_v&lt;你的Godot版本号&gt;-stable_export_templates.tpz</code>下载，然后在Godot中的“编辑器”——“导出模板管理器”——“选择从文件安装”，选择下载的文件安装即可。</p>
+<h1 id="3-随想">
+  3 随想
+  <a class="heading-link" href="#3-%e9%9a%8f%e6%83%b3">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>关于Godot的学习，由于有其他事务，短时间内应该不会再继续看新书了。最近加入了矢量工坊的开源游戏群，里面的程序（几乎）全是外行转码或者初高中小朋友，这里姑且不论好坏。管中窥豹，也可以看到国内独立游戏团队的参差水平和艰难处境。最后，学Godot只是个人爱好，我也完成过Unity的2D平台游戏demo开发，但我并不看好国内的游戏市场。君量力而行，禽择良木而栖。</p>
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2022 -
+    
+    2023
+     Newmilkiceonwall 
+    ·
+    
+     <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

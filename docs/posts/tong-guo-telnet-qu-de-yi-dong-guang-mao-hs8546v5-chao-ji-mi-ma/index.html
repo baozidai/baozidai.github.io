@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <title>
+  通过telnet取得移动光猫HS8546V5超级密码 · 墙上的新牛奶冰
+</title>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Newmilkiceonwall">
+<meta name="description" content="
+  需要的工具
+  
+    
+    Link to heading
+  
+
+
+
+ONT维修使能工具 提取码：8cb2 解压密码:W06J-HUUs-hzF0-syPN （去掉横杠）
+
+
+华为配置加解密工具 提取码：8cb2 解压密码:W06J-HUUs-hzF0-syPN（去掉横杠）
+
+
+任意一种telnet客户端 XSHELL
+
+
+一截普通网线（用于直接连接光猫）
+
+
+一个FTP服务器（可选） TFTP服务器
+
+">
+<meta name="keywords" content="blog,personal">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="通过telnet取得移动光猫HS8546V5超级密码"/>
+<meta name="twitter:description" content="
+  需要的工具
+  
+    
+    Link to heading
+  
+
+
+
+ONT维修使能工具 提取码：8cb2 解压密码:W06J-HUUs-hzF0-syPN （去掉横杠）
+
+
+华为配置加解密工具 提取码：8cb2 解压密码:W06J-HUUs-hzF0-syPN（去掉横杠）
+
+
+任意一种telnet客户端 XSHELL
+
+
+一截普通网线（用于直接连接光猫）
+
+
+一个FTP服务器（可选） TFTP服务器
+
+"/>
+
+<meta property="og:title" content="通过telnet取得移动光猫HS8546V5超级密码" />
+<meta property="og:description" content="
+  需要的工具
+  
+    
+    Link to heading
+  
+
+
+
+ONT维修使能工具 提取码：8cb2 解压密码:W06J-HUUs-hzF0-syPN （去掉横杠）
+
+
+华为配置加解密工具 提取码：8cb2 解压密码:W06J-HUUs-hzF0-syPN（去掉横杠）
+
+
+任意一种telnet客户端 XSHELL
+
+
+一截普通网线（用于直接连接光猫）
+
+
+一个FTP服务器（可选） TFTP服务器
+
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://newmilkiceonwall.github.io/posts/tong-guo-telnet-qu-de-yi-dong-guang-mao-hs8546v5-chao-ji-mi-ma/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-08-10T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-08-10T00:00:00+00:00" />
+
+
+
+
+<link rel="canonical" href="https://newmilkiceonwall.github.io/posts/tong-guo-telnet-qu-de-yi-dong-guang-mao-hs8546v5-chao-ji-mi-ma/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.36f76aaf39a14ecf5c3a3c6250dcaf06c238b3d8365d17d646f95cb1874e852b.css" integrity="sha256-NvdqrzmhTs9cOjxiUNyvBsI4s9g2XRfWRvlcsYdOhSs=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.593028e7f7ac55c003b79c230d1cd411bb4ca53b31556c3abb7f027170e646e9.css" integrity="sha256-WTAo5/esVcADt5wjDRzUEbtMpTsxVWw6u38CcXDmRuk=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/png" href="/img/32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/img/16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+<meta name="generator" content="Hugo 0.110.0">
+
+
+
+
+
+  </head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      墙上的新牛奶冰
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">博客</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/about">关于</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://newmilkiceonwall.github.io/posts/tong-guo-telnet-qu-de-yi-dong-guang-mao-hs8546v5-chao-ji-mi-ma/">
+              通过telnet取得移动光猫HS8546V5超级密码
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2022-08-10T00:00:00Z">
+                八月 10, 2022
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              
+            </span>
+          </div>
+          
+          
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/">技术笔记</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+          <img src="/images/tong-guo-telnet-qu-de-yi-dong-guang-mao-hs8546v5-chao-ji-mi-ma.jpg" alt="Featured image"/>
+        
+        <h1 id="需要的工具">
+  需要的工具
+  <a class="heading-link" href="#%e9%9c%80%e8%a6%81%e7%9a%84%e5%b7%a5%e5%85%b7">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<ul>
+<li>
+<p><a href="https://pan.baidu.com/s/170toeJhYVTu7CDk2C92SKQ">ONT维修使能工具</a> 提取码：8cb2 解压密码:W06J-HUUs-hzF0-syPN （去掉横杠）</p>
+</li>
+<li>
+<p><a href="https://pan.baidu.com/s/170toeJhYVTu7CDk2C92SKQ">华为配置加解密工具</a> 提取码：8cb2 解压密码:W06J-HUUs-hzF0-syPN（去掉横杠）</p>
+</li>
+<li>
+<p>任意一种telnet客户端 <a href="https://www.xshell.com/zh/xshell/">XSHELL</a></p>
+</li>
+<li>
+<p>一截普通网线（用于直接连接光猫）</p>
+</li>
+<li>
+<p>一个FTP服务器（可选） <a href="https://www.tftp-server.com/">TFTP服务器</a></p>
+</li>
+</ul>
+<h1 id="1-telnet使能">
+  1 telnet使能
+  <a class="heading-link" href="#1-telnet%e4%bd%bf%e8%83%bd">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>首先，用网线连接电脑和光猫，保证电脑分配到一个可访问光猫的IP地址。打开ONT维修使能工具（ONT V5.exe），选择“V5使能”。在“网卡配置”一栏选择连接光猫的网卡（如果你有多张网卡的话请注意甄别）。点击右下角的“启动”，等待左下角“当前成功总数”变为1，同时你可以看到光猫指示灯全亮，点击“停止”，并关闭ONT维修使能工具，接下来将不再需要它。</p>
+<h1 id="2-telnet接入光猫">
+  2 telnet接入光猫
+  <a class="heading-link" href="#2-telnet%e6%8e%a5%e5%85%a5%e5%85%89%e7%8c%ab">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>打开Xshell，新建空白标签页。输入以下telnet命令:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>telnet 192.168.1.1 <span style="font-style:italic"># 根据你的具体情况，这个IP地址可能不同</span>
+</span></span></code></pre></div><p>随后需要输入账户和密码，这个账户通常是 <strong>root</strong> ，在我这里密码为 <strong>adminHW</strong>，当然你可能会需要尝试以下<strong>其他密码</strong>：</p>
+<ul>
+<li>
+<p>Hw8@CMCC</p>
+</li>
+<li>
+<p>Hw8@cMcc</p>
+</li>
+<li>
+<p>useradmin</p>
+</li>
+<li>
+<p>admin</p>
+</li>
+<li>
+<p>hg2x0
+如果这里的密码都不能成功登录，你可能需要自己在网上搜索更新的密码。</p>
+<h1 id="3-启动shell">
+  3 启动Shell
+  <a class="heading-link" href="#3-%e5%90%af%e5%8a%a8shell">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>在成功连接的telnel中，输入下面多条命令将启动shell并到达配置文件的存储目录:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>su
+</span></span></code></pre></div><p>你应该看到“success!”字样在屏幕出现，左侧的提示符页变为</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>SU_WAP&gt;
+</span></span></code></pre></div><p>随后输入：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>shell
+</span></span></code></pre></div><p>你将看到如下的BusyBox启动的相关提示：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>BusyBox v1.30.1 () built-in shell (ash)
+</span></span><span style="display:flex;"><span>Enter <span style="font-style:italic">&#39;help&#39;</span> <span style="font-weight:bold">for</span> a list of built-in commands.
+</span></span></code></pre></div></li>
+</ul>
+<p>profile close core dump</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>同时左侧的提示符页变为：
+</span></span><span style="display:flex;"><span>``` bash
+</span></span><span style="display:flex;"><span>WAP(Dopra Linux) # 
+</span></span></code></pre></div><p>这时候cd到需要的目录中：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd /mnt/jffs2
+</span></span></code></pre></div><p>你可以通过 <em>ls</em> 命令来查看该目录下的一些文件，保存有超级密码的配置文件名为 <strong>hw_ctree.xml</strong> ，这是一份加密的配置文件。</p>
+<h1 id="4-解密配置文件">
+  4 解密配置文件
+  <a class="heading-link" href="#4-%e8%a7%a3%e5%af%86%e9%85%8d%e7%bd%ae%e6%96%87%e4%bb%b6">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>为了保证安全，首先需要将配置文件复制一份。提示：如果你遇到如下找不到命令情况：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/bin/sh: aescrypt2: not found
+</span></span><span style="display:flex;"><span>/bin/sh: cp: not found
+</span></span></code></pre></div><p>可以通过退出shell，重新启动shell的方式来解决。在成功之前，你可能需要多次尝试。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>exit
+</span></span><span style="display:flex;"><span>shell
+</span></span><span style="display:flex;"><span>cd /mnt/jffs2
+</span></span></code></pre></div><p>现在，复制配置文件：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cp hw_ctree.xml myconf.xml.gz <span style="font-style:italic"># 待会会解密出一个压缩格式文件,所以直接在这里命名为.gz</span>
+</span></span></code></pre></div><p>然后使用aescrypt2解密这个后缀为.gz的xml文件:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>aescrypt2 1 myconf.xml.gz tmp
+</span></span><span style="display:flex;"><span><span style="font-style:italic"># aescrypt2 &lt;mode&gt; &lt;input file&gt; &lt;outputfilename&gt;</span>
+</span></span><span style="display:flex;"><span><span style="font-style:italic"># 值得注意的是，aescrypt2似乎会无视 &lt;outputfilename&gt; 参数，输出在原来的文件名上，这个实例中就是myconf.xml.gz</span>
+</span></span></code></pre></div><p>接下来解压这个文件：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>gzip -d myconf.xml.gz
+</span></span></code></pre></div><p>将得到一个名为 <strong>myconf.xml</strong> 的文件，接下来cat出加密的Password字符串：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cat myconf.xml|grep CMCCAdmin
+</span></span></code></pre></div><p>在输出中找到类似下方内容的字符串，他们通常位于输出的第一行，应该很容易找到：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>UserName=&#34;CMCCAdmin&#34; Password=&#34;$2@uIc/AkarL8Iwo)FLER@lHy_Y&amp;ltXdfs%orQ9g4yw4$&#34;
+</span></span></code></pre></div><p>双引号内的字符串就是加密后的密码，复制他们。打开华为配置加解密工具(huawei.exe), 粘贴刚刚复制的字符串到“密文解密”一栏，点击“$2解密”,即可得到超级密码。<strong>注意</strong>：在某些地区，你可能需要在解密出的这个字符串前面加上 <strong>CMCCAdmin#</strong> 或 <strong>CMCCAdmin</strong> 才能组成正确的超级密码。如果解密出的字符串为 <strong>1234#1234</strong> ，那么除了这个字符串本身就是超级密码以外，还有以下两种可能：</p>
+<blockquote>
+<p>CMCCAdmin#1234#1234
+CMCCAdmin1234#1234</p>
+</blockquote>
+<h1 id="5-写在后面">
+  5 写在后面
+  <a class="heading-link" href="#5-%e5%86%99%e5%9c%a8%e5%90%8e%e9%9d%a2">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>如果你有一个支持匿名的FTP服务器，你也可以将解密后的myconf.xml传输到电脑上进一步研究:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>tftp -p -l myconf.xml -r myconf.xml &lt;FTP服务器地址&gt;  
+</span></span></code></pre></div><p>如果你的光猫<em><strong>在公共场所提供互联网服务</strong></em>，在不采取其他措施的情况下，为了你的网络安全，请一定记得通过你刚刚取得超级密码登陆光猫，<strong>在 “安全”——“广域网访问设置”——“ONT访问控制配置” 中关闭通过Telnet访问设备。</strong></p>
+<h1 id="6-参考">
+  6 参考
+  <a class="heading-link" href="#6-%e5%8f%82%e8%80%83">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<blockquote>
+<ul>
+<li><a href="https://www.right.com.cn/FORUM/thread-4070210-1-1.html">华为光猫HS8546V5获取超级密码\改华为界面</a></li>
+<li><a href="https://www.cnblogs.com/myzerg/p/3622134.html">华为 HG8245C 光猫 修改无线用户数限制+hw_ctree.xml 文件解密</a></li>
+</ul>
+</blockquote>
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2022 -
+    
+    2023
+     Newmilkiceonwall 
+    ·
+    
+     <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

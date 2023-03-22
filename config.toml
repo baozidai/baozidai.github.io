@@ -1,0 +1,64 @@
+baseURL = 'https://newmilkiceonwall.github.io/'
+title = "墙上的新牛奶冰"
+theme = "coder"
+languagecode = "zh"
+defaultcontentlanguage = "zh"
+
+paginate = 20
+
+pygmentsstyle = "bw"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+#disqusShortname = "yourdiscussshortname"
+
+[params]
+  author = "Newmilkiceonwall"
+  info = "流量为王时代下，独立自我的小站。"
+  description = "Newmilkiceonwall's personal website"
+  keywords = "blog,personal"
+  avatarurl = "/img/avatar.png"
+  #gravatar = "john.doe@example.com"
+
+  favicon_32 = "/img/32x32.png"
+  favicon_16 = "/img/16x16.png"
+
+  since = 2022
+
+  enableTwemoji = true
+
+  colorScheme = "auto"
+  hidecolorschemetoggle = false
+
+  # customCSS = ["css/custom.css"]
+  # customSCSS = ["scss/custom.scss"]
+  # customJS = ["js/custom.js"]
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+  author = "authors"
+
+# Social links
+[[params.social]]
+  name = "Github"
+  icon = "fa fa-github fa-2x"
+  weight = 1
+  url = "https://github.com/newmilkiceonwall/"
+#[[params.social]]
+  #name = "Gitlab"
+  #icon = "fa fa-gitlab fa-2x"
+  #weight = 2
+  #url = "https://gitlab.com/johndoe/"
+
+# Menu links
+[[menu.main]]
+  name = "博客"
+  weight = 1
+  url  = "posts/"
+[[menu.main]]
+  name = "关于"
+  weight = 2
+  url = "about/about"
+

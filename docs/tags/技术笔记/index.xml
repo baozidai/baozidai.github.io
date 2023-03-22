@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>技术笔记 on 墙上的新牛奶冰</title>
+    <link>https://newmilkiceonwall.github.io/tags/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/</link>
+    <description>Recent content in 技术笔记 on 墙上的新牛奶冰</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Wed, 08 Mar 2023 13:48:00 +0800</lastBuildDate><atom:link href="https://newmilkiceonwall.github.io/tags/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>J1900|OpenWrt安装配置笔记</title>
+      <link>https://newmilkiceonwall.github.io/posts/j1900_openwrt%E6%8A%98%E8%85%BE%E8%AE%B0%E5%BD%95%E4%B8%80/</link>
+      <pubDate>Wed, 08 Mar 2023 13:48:00 +0800</pubDate>
+      
+      <guid>https://newmilkiceonwall.github.io/posts/j1900_openwrt%E6%8A%98%E8%85%BE%E8%AE%B0%E5%BD%95%E4%B8%80/</guid>
+      <description>J1900|OpenWrt安装配置笔记Link to heading这份笔记记录的信息可能不完全
+我使用的固件是openwrt-22.03.3-x86-generic-generic-ext4-combined-efi
+如何启动Link to heading需要把主板的uefi引导关闭，保证能够从U盘或者其他外部介质启动。
+使用了balenaEtcher来将openwrt的固件烧录到U盘中，Roadkil&#39;s Disk Image似乎也可以，但是效果不如BlaenaEtcher。当然，BlaenaEtcher不会使用全部的U盘空间。这篇文章可以实现扩容OpenWrt 存储空间扩容的两种方案 这个内容可以让你把根目录/挂载在U盘的其他地方。
+关于如何通过网线调试并且上网Link to heading用一根网线连接
+我的笔记本&amp;lt;&amp;mdash;&amp;mdash;&amp;mdash;&amp;gt;1900主板
+然后在Windows控制面板——适配器——选择可以联网的适配器——右键——属性——共享——对“以太网”共享此连接。在openwrt里面把lan的网关设置为电脑有线适配器的ip地址，然后1900就可以通过电脑的网络上网了。这适用于J1900没有多余网口时候的调试。
+中文化和其他驱动Link to heading安装luci-i18n-base-zh-cn luci-i18n-firewall-zh-cn（安装了之后看不出哪里汉化了）。我的无线USB网卡是W311U+，内置的是RT2870STA的驱动，在opkg里面搜到了这个驱动 kmod-rt2800-usb。安装驱动之后，如果有必要，使用
+ifconfig wlan&amp;lt;x&amp;gt; up 把无线网卡启动起来。wifi config命令可以自动检测无线设备（前提是安装了恰当的驱动），并在/etc/config/wireless生成配置文件，需要在这个配置文件中将无线打开（默认是关闭的）
+关于DMZ主机Link to heading在防火墙下面添加如下规则cat /etc/config/firewall
+config redirect &amp;#39;dmz&amp;#39; option name &amp;#39;dmz&amp;#39; option src &amp;#39;wan&amp;#39; option proto &amp;#39;tcp&amp;#39; option target &amp;#39;DNAT&amp;#39; option dest_ip &amp;#39;192.168.18.235&amp;#39; option enabled &amp;#39;1&amp;#39; config redirect &amp;#39;dmzudp&amp;#39; option name &amp;#39;dmzudp&amp;#39; option src_port &amp;#39;!</description>
+    </item>
+    
+    <item>
+      <title>通过telnet取得移动光猫HS8546V5超级密码</title>
+      <link>https://newmilkiceonwall.github.io/posts/tong-guo-telnet-qu-de-yi-dong-guang-mao-hs8546v5-chao-ji-mi-ma/</link>
+      <pubDate>Wed, 10 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://newmilkiceonwall.github.io/posts/tong-guo-telnet-qu-de-yi-dong-guang-mao-hs8546v5-chao-ji-mi-ma/</guid>
+      <description>&lt;h1 id=&#34;需要的工具&#34;&gt;
+  需要的工具
+  &lt;a class=&#34;heading-link&#34; href=&#34;#%e9%9c%80%e8%a6%81%e7%9a%84%e5%b7%a5%e5%85%b7&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;
+    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;
+  &lt;/a&gt;
+&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://pan.baidu.com/s/170toeJhYVTu7CDk2C92SKQ&#34;&gt;ONT维修使能工具&lt;/a&gt; 提取码：8cb2 解压密码:W06J-HUUs-hzF0-syPN （去掉横杠）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://pan.baidu.com/s/170toeJhYVTu7CDk2C92SKQ&#34;&gt;华为配置加解密工具&lt;/a&gt; 提取码：8cb2 解压密码:W06J-HUUs-hzF0-syPN（去掉横杠）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;任意一种telnet客户端 &lt;a href=&#34;https://www.xshell.com/zh/xshell/&#34;&gt;XSHELL&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;一截普通网线（用于直接连接光猫）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;一个FTP服务器（可选） &lt;a href=&#34;https://www.tftp-server.com/&#34;&gt;TFTP服务器&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Abouts on 墙上的新牛奶冰</title>
+    <link>https://newmilkiceonwall.github.io/about/</link>
+    <description>Recent content in Abouts on 墙上的新牛奶冰</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh</language>
+    <lastBuildDate>Wed, 10 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://newmilkiceonwall.github.io/about/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>关于</title>
+      <link>https://newmilkiceonwall.github.io/about/about/</link>
+      <pubDate>Wed, 10 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://newmilkiceonwall.github.io/about/about/</guid>
+      <description>欢迎来到我的小站呀，很高兴遇见你！🤝
+🏠 关于本站Link to heading这是我个人用来记录生活中的心得体会、学习的中笔记知识、实践中创意点子等内容的地方。
+关于生活的酸甜，或许并不值得阅读、参考。 关于学习笔记——写给自己看。如果对你有帮助，那我可太高兴了！ 关于创意点子。时常有些奇思妙想和小众需求，受限于精力暂时无法实现或想法过于天马行空，我便会在这里做下记录，作为一种对思维的启发。如果你实现了某个需求或者相似功能，请联系我试用。 最后，这是一个静态博客，由Gridea驱动 自2023年1月24日由Hugo驱动（感谢Gridea2Hugo）。
+👨‍💻 博主是谁Link to heading没错，是我。一个在校研究生。在这个流量漫天飞的时代，在下不想被过度关注，我希望自己在赛博空间中，能够随时像回到家里肆意关上门，拉起窗帘那样具有可控的私密，所以无意在这里透露更多个人细节。
+⛹ 兴趣爱好Link to headingPython玩家，科研新手。
+📬 联系我呀Link to headingEmail
+😜 关于此页Link to heading此页作为我的个人快照，是我脑子里“看法”的不完全映射。我对这个网址、这个页面、对我自己及其他方面的看法，这些看法可能会在看过一本书、听闻一个社会事件，或是读过一条知乎而发生改变。所以，这个页面也会不时发生变动。</description>
+    </item>
+    
+  </channel>
+</rss>
